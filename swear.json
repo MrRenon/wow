@@ -1,0 +1,57 @@
+{
+  "badword_941417273875382352_": [
+    {
+      "guildId": "941417273875382352",
+      "jsons": [
+        "qahpa"
+      ]
+    },
+    {
+      "guildId": "941417273875382352",
+      "jsons": [
+        "gawad"
+      ]
+    }
+  ],
+  "badword_978228340634845234_": [
+    {
+      "jsons": [
+        "bitch"
+      ]
+    }
+  ],
+  "swear_978228340634845234_": [
+    {
+      "jsons": [
+        "what"
+      ]
+    },
+    {
+      "jsons": [
+        "what"
+      ]
+    }
+  ],
+  "undefined": [
+    {
+      "jsons": [
+        "what"
+      ]
+    },
+    [
+      "what"
+    ],
+    [
+      "what"
+    ]
+  ],
+  "[object Object]": [
+    {
+      "jsons": [
+        "what"
+      ]
+    },
+    null,
+    null
+  ]
+}

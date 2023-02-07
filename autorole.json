@@ -1,0 +1,109 @@
+{
+    "982279892282511360": {
+        "auto": "member",
+        "onoff": "on"
+    },
+    "941417273875382352": {
+        "onoff": "off"
+    },
+    "1010849579719217162": {
+        "onoff": "Off"
+    },
+    "885122284581421146": {
+        "onoff": "Off"
+    },
+    "990682421328498801": {
+        "onoff": "Off"
+    },
+    "1012037098418753566": {
+        "onoff": "Off"
+    },
+    "952589068389212171": {
+        "onoff": "Off"
+    },
+    "755494496631783554": {
+        "auto": {
+            "guild": "755494496631783554",
+            "icon": "10550730334664c229e06149c3f15fd0",
+            "unicodeEmoji": null,
+            "id": "975350030917591071",
+            "name": "Members",
+            "color": 8240600,
+            "hoist": true,
+            "rawPosition": 43,
+            "permissions": "689379315201",
+            "managed": false,
+            "mentionable": false,
+            "tags": null,
+            "createdTimestamp": 1652611968498
+        },
+        "onoff": "on"
+    },
+    "1014991279853162506": {
+        "auto": {
+            "guild": "1014991279853162506",
+            "icon": null,
+            "unicodeEmoji": null,
+            "id": "1052685761809502228",
+            "name": "－－۰•●𝑴𝒆𝒎𝒃𝒆𝒓●•۰－－",
+            "color": 0,
+            "hoist": true,
+            "rawPosition": 112,
+            "permissions": "1071631420993",
+            "managed": false,
+            "mentionable": false,
+            "tags": null,
+            "createdTimestamp": 1671050243571
+        },
+        "onoff": "on"
+    },
+    "1028303646506618890": {
+        "auto": {
+            "guild": "1028303646506618890",
+            "icon": null,
+            "unicodeEmoji": null,
+            "id": "1033294823760875530",
+            "name": "test",
+            "color": 15844367,
+            "hoist": true,
+            "rawPosition": 1,
+            "permissions": "1071698660929",
+            "managed": false,
+            "mentionable": false,
+            "tags": null,
+            "createdTimestamp": 1666427083674
+        },
+        "onoff": "on"
+    },
+    "998995553511804978": {
+        "onoff": "Off"
+    },
+    "1002850506399551550": {
+        "onoff": "Off"
+    },
+    "1038521348265361448": {
+        "onoff": "Off"
+    },
+    "976149459333439518": {
+        "onoff": "Off"
+    },
+    "1028958674410012744": {
+        "onoff": "Off"
+    },
+    "1017424452742545428": {
+        "onoff": "Off"
+    },
+    "978340054189633646": {
+        "onoff": "Off"
+    },
+    "990556280223596564": {
+        "onoff": "Off"
+    },
+    "875733599066939402": {
+        "onoff": "Off"
+    },
+    "1020354934677438544": {
+        "auto": "<@&1066808690730082334>",
+        "onoff": "on"
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "941417273875382352": {
+        "role": {
+            "guild": "941417273875382352",
+            "icon": null,
+            "unicodeEmoji": null,
+            "id": "1014182339322056806",
+            "name": "USERS",
+            "color": 3066993,
+            "hoist": true,
+            "rawPosition": 40,
+            "permissions": "515396389953",
+            "managed": false,
+            "mentionable": true,
+            "tags": {},
+            "createdTimestamp": 1661870312291
+        }
+    },
+    "1020354934677438544": {
+        "role": {
+            "guild": "1020354934677438544",
+            "icon": null,
+            "unicodeEmoji": null,
+            "id": "1066808690730082334",
+            "name": "🍀 Member",
+            "color": 3066993,
+            "hoist": true,
+            "rawPosition": 20,
+            "permissions": "67108864",
+            "managed": false,
+            "mentionable": false,
+            "tags": null,
+            "createdTimestamp": 1674417412217
+        }
+    }
+}
