@@ -747,15 +747,7 @@ client.on("guildCreate", async (guild) => {
   client.channels.cache.get("941591989621751848").send({ embeds: [embed] });
 });
 
-client.on("guildDelete", async (guild) => {
-  console.log(`I Joined Server ${guild.name}`);
-  let embed = new EmbedBuilder().setTitle("Guild Kicked").setDescription(`
- Name Guild: ${guild.name}   
- 
- Membercount: ${guild.memberCount}
-    `);
-  client.channels.cache.get("941591989621751848").send({ embeds: [embed] });
-});
+
 
 //if (!message.channel.guild)
 //  return message.reply(`هذا الأمر فقط ل السيرفرات ❌`);
