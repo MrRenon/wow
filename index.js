@@ -896,7 +896,7 @@ client.on('messageCreate', async (message) => {
   let args = message.content.split(" ").slice(1).join(" ")
   if (message.content.startsWith(prefix + 'repeat')) {
     // Tries to get the voice channel
-    if(args[1] === "true" || args[1] === "false") {
+    if(args === "true" || args === "false") {
     const player = message.client.manager.get(message.guild.id);
     if (!player) return message.reply("there is no player for this guild.");
 
@@ -939,6 +939,32 @@ client.on('messageCreate', async (message) => {
     message.channel.send('**Paused the current track**')
   }
 })
+
+client.on('messageCreate', async (message) => {
+  if (message.content.startsWith(prefix + 'volume')) {
+    // Tries to get the voice channel
+   
+    let args = message.content.split(" ").slice(1).join(" ")
+    if(!args) return message.reply("Please Type Number To Voluming ")
+    const player = message.client.manager.get(message.guild.id);
+
+    if (!player) return message.reply("there is no player for this guild.");
+    if (!args.length) return message.reply(`the player volume is \`${player.volume}\`.`)
+
+    const { channel } = message.member.voice;
+    
+    if (!channel) return message.reply("you need to join a voice channel.");
+    if (channel.id !== player.voiceChannel) return message.reply("you're not in the same voice channel.");
+
+    const volume = Number(args);
+    
+    if (!volume || volume < 1 || volume > 100) return message.reply("you need to give me a volume between 1 and 100.");
+
+    player.setVolume(volume);
+    return message.reply(`set the player volume to \`${volume}\`.`);
+  }
+})
+
 client.on('messageCreate', async (message) => {
   if (message.content.startsWith(prefix + 'resume')) {
     // Tries to get the voice channel
