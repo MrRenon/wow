@@ -892,6 +892,73 @@ client.on('messageCreate', async (message) => {
   }
 })
 
+client.on('messageCreate', async (message) => {
+  let args = message.content.split(" ").slice(1).join(" ")
+  if (message.content.startsWith(prefix + 'repeat')) {
+    // Tries to get the voice channel
+    if(args[1] === "true" || args[1] === "false") {
+    const player = message.client.manager.get(message.guild.id);
+    if (!player) return message.reply("there is no player for this guild.");
+
+    const { channel } = message.member.voice;
+    
+    if (!channel) return message.reply("you need to join a voice channel.");
+    if (channel.id !== player.voiceChannel) return message.reply("you're not in the same voice channel.");
+    
+    if (args.length && /queue/i.test(args[0])) {
+      player.setQueueRepeat(!player.queueRepeat);
+      const queueRepeat = player.queueRepeat ? "enabled" : "disabled";
+      return message.reply(`${queueRepeat} queue repeat.`);
+    }
+
+    player.setTrackRepeat(!player.trackRepeat);
+    const trackRepeat = player.trackRepeat ? "enabled" : "disabled";
+    return message.reply(`${trackRepeat} track repeat.`);
+    
+  }
+  }
+})
+
+client.on('messageCreate', async (message) => {
+  if (message.content.startsWith(prefix + 'pause')) {
+    // Tries to get the voice channel
+    const memberChannel = message.member.voice.channel.id
+
+    // Checks if the member is on a voice channel
+    if(!memberChannel) return message.channel.send('You are not on a voice channel')
+
+    // Spawning lavalink player
+    
+
+    // Getting tracks
+    const player = client.manager.players.get(message.guild.id);
+
+    // Adding in queue
+    player.pause(true)
+
+    message.channel.send('**Paused the current track**')
+  }
+})
+client.on('messageCreate', async (message) => {
+  if (message.content.startsWith(prefix + 'resume')) {
+    // Tries to get the voice channel
+    const memberChannel = message.member.voice.channel.id
+
+    // Checks if the member is on a voice channel
+    if(!memberChannel) return message.channel.send('You are not on a voice channel')
+
+    // Spawning lavalink player
+    
+
+    // Getting tracks
+    const player = client.manager.players.get(message.guild.id);
+
+    // Adding in queue
+    player.pause(false)
+
+    message.channel.send('**Now Play the current track**')
+  }
+})
 
 var log = require("./log.json");
 function saveLog() {
