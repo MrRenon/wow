@@ -140,5 +140,29 @@
             "rateLimitPerUser": 0,
             "createdTimestamp": 1671047885009
         }
+    },
+    "1047939443253854269": {
+        "cha": {
+            "type": 0,
+            "guild": "1047939443253854269",
+            "guildId": "1047939443253854269",
+            "parentId": null,
+            "permissionOverwrites": [
+                "1048630587465928807",
+                "1048001481506291818",
+                "1047939443253854269"
+            ],
+            "messages": [],
+            "threads": [],
+            "nsfw": false,
+            "flags": 0,
+            "id": "1072546919882178610",
+            "name": "🎉・𝖦𝗂𝗏𝖾𝖺𝗐𝖺𝗒₂",
+            "rawPosition": 4,
+            "topic": null,
+            "lastMessageId": "1074268765564440666",
+            "rateLimitPerUser": 0,
+            "createdTimestamp": 1675785512658
+        }
     }
 }
